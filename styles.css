@@ -1,0 +1,449 @@
+:root{
+    --titulos:#d4a574;
+
+    --letraBlanco:#ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    background-image:  url(Imagnes/21526-ecosistema-el_pastoreo-la_reserva_natural_de-el_parque_nacional_de-las_formaciones_montanosas-3840x2160.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+header {
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 77.3px;
+}
+
+nav > ul {
+    display: flex;
+    gap: 2rem;
+    margin-right: 5rem;
+}
+
+ul > li {
+    list-style: none;
+}
+
+li > a {
+    text-decoration: none;
+    color: var(--letraBlanco);
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+li > a:hover {
+    text-decoration: underline 0.2rem;
+    text-underline-offset: 0.5rem;
+    color: #d4a574;
+}
+
+.logo-nav img {
+    width: 28rem;
+    margin-left: 5rem;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+#guia-nav {
+    color: #d4a574;
+}
+
+
+label i {
+    font-size: 4rem;
+}
+
+.ctn-menu {
+    display: none;
+    color: var(--letraBlanco);
+    margin-right: 5rem;
+}
+
+
+nav  input {
+    display: none;
+}
+
+a:hover {
+    text-decoration: underline 0.2rem;
+    color: #d4a574;
+}
+
+.logo-nav > img {
+    width: 28rem;
+}
+
+.logo-nav {
+    margin-left: 5rem;
+}
+
+nav {
+    margin-right: 5rem;
+
+}
+.contenedor-1{
+    height: 100vh; /*pantalla completa*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.titulo{
+    text-align: center;
+    margin-right: 20rem;
+    margin-left: 20rem;
+    font-size: 4rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2rem 4rem;
+    border: 3px solid #d4a574;
+    border-radius: 2rem;
+    color: var(--titulos);
+    box-shadow: 0 10px 30px rgba(100, 87, 87, 0.5);
+}
+.subtitulo{
+    font-family: "Ubuntu", sans-serif;
+    text-align: justify;
+    font-size: 4rem;
+    color:var(--letraBlanco) ;
+    margin-top: 5rem;
+    box-shadow: 0 10px 30px rgb(209, 164, 164);
+    margin-right: 20rem;
+    margin-left: 20rem;
+    padding: 5rem 10rem 5rem 10rem;
+    background-color: black;
+    opacity: 62%;
+    border-radius: 3rem;
+}
+
+.linea-temporal{
+    padding: 10rem;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+}
+.linea-temporal h2, .titulo{
+    font-family: "Playfair Display", serif;
+}
+
+.linea-temporal h2 {
+    text-align: center;
+    font-size: 4.8rem;
+    color: var(--titulos);
+    margin-bottom: 10rem;
+    letter-spacing: 3px;
+}
+
+.contenedor-2{
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.contenedor-repititivo{
+    background: linear-gradient(135deg, #2d2d2d 0%, #1f1f1f 100%);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    display: flex;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid #d4a574;
+}
+.contenedor-repititivo:hover{
+    transform: translateY(-1rem);
+    box-shadow: 0 1.5rem 4rem rgba(212, 165, 116, 0.3); /*0 desplazamiento horizontal , desplazamiento vertical, difuminado, color*/
+}
+
+.imagen-uncharted img{
+    width: 24rem;
+    height: 32rem;
+    height: 100%;
+}
+
+.contenido{
+    padding: 4rem;
+    flex: 1;
+}
+.titulo-juego{
+    color: var(--titulos);
+    font-size: 3.2rem;
+}
+
+.anio-juego{
+    color: #888;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    margin-top: 0.2rem;
+}
+.descripcion-juego{
+    line-height: 1.8; /*separacion entre lineas*/
+    color: #c2bfbf;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+.titulo:active{
+    background: black;
+}
+li > a:focus {                           /*FOCUS    */
+    outline: 3px solid #885e30;
+    border-radius: 5px;
+    padding: 1rem;
+}
+footer{
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    color: aliceblue;
+}
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 2px solid var(--titulos);
+}
+
+footer a {
+    color: var(--letraBlanco);
+    font-size: 1.6rem;
+    text-decoration: none;  
+}
+
+footer a:hover {
+    color: var(--titulos);  
+}
+.footer2{
+    color:#888;
+    font-size:1.2rem; 
+    margin-top:1rem;
+}
+
+@media (max-width: 450px) {
+    li > a {
+        font-size: 3.6rem;
+    }
+}
+
+@media (max-width: 1280px) {
+    .titulo {
+        font-size: 3.5rem;
+        padding: 2rem 3rem;
+        margin: 0 15rem;
+    }
+    .subtitulo {
+        font-size: 3.2rem;
+        padding: 4rem 8rem;
+        margin: 5rem 15rem;
+    }
+    
+    .linea-temporal{
+        padding: 5rem 2rem;
+    }
+    
+    
+}
+@media (max-width: 1024px){
+    .titulo{
+        font-size: 3rem;
+        padding: 2rem;
+        margin: 0 10rem;
+    }
+    .subtitulo {
+        font-size: 2.8rem;
+        padding: 3rem 6rem;
+        margin: 4rem 10rem;
+    }
+    .linea-temporal {
+        padding: 10rem 4rem;
+    }
+    .linea-temporal h2{
+        font-size: 3.4rem;
+        margin-bottom:6rem;
+    }
+    .titulo-juego {
+        font-size: 3rem;
+    }
+    
+    .descripcion-juego {
+        font-size: 1.8rem;
+    }
+    .ctn-links{
+        margin-left: 7rem;
+    }
+    .logo-nav{
+        margin-left: 0rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /*Menu hamburguesa y navbar*/
+
+    .ctn-menu {
+        display: block;
+    }
+
+    .ctn-menu, i {            /*SELECTOR MULTIPLE*/
+        cursor: pointer;
+    }
+
+    .logo-nav img {            /*SELECTOR DESCENDIENTE*/
+        width: 24rem;
+        margin-left: 1.5rem;
+    }
+
+    .ctn-menu {
+        margin-right: 1.5rem;
+    }
+
+
+    nav > ul {                 /*SELECTOR HIJO*/
+        z-index: 999;
+        background-color: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 120%;
+        top: 7.2rem;
+        gap: 10rem;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.3s;
+        transform: translateX(-90px);
+
+    }
+
+    li > a {
+        font-size: 4rem;
+    }
+
+    #menu-hamburguesa:checked + .ctn-links {
+        height: 91vh; 
+    }
+    .contenedor-1 {
+        height: 100vh;
+        padding: 0 2rem;    
+    }
+    .titulo {
+        font-size: 2.5rem;
+        padding: 3rem 2rem;
+        margin: 0 2rem;
+        border-radius: 1.5rem;
+    }
+    
+    .subtitulo {
+        font-size: 2.2rem;
+        padding: 3rem 2rem;
+        text-align: center;
+        margin: 4rem 2rem 0;       
+        border-radius: 2rem;
+    }
+   
+    .linea-temporal h2 {
+        font-size: 3.2rem;
+        margin-bottom: 5rem;
+        letter-spacing: 2px;
+    }
+
+    .contenedor-2 {
+        gap: 3rem;
+    }
+
+
+    .contenedor-repititivo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen-uncharted {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 3/4;
+        max-height: 50rem;
+    }
+    .imagen-uncharted img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        margin-left: 0;
+        background-color: #1a1a1a;
+    }
+    .titulo-juego{
+        text-align: center;
+    }
+    .anio-juego{
+        text-align: center;
+    }
+}
+
+@media (max-width: 623px){
+    .titulo {
+        font-size: 2.5rem;
+        padding: 3rem 2rem;
+        border-radius: 1.5rem;
+        background: black;
+    }
+    
+    .titulo h1{
+        font-size: 3rem;
+    }
+    .subtitulo p{
+        font-size: 2.2rem;
+        text-align: center;
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 55%;
+    }
+    .logo-nav img {
+        width: 20rem;
+        margin-left: 1rem;
+    }
+
+    .titulo {
+        font-size: 2.2rem;
+        padding: 2.5rem 1.5rem;
+        margin: 0 1rem;
+        border-radius: 1rem;
+    }   
+    .subtitulo {
+        font-size: 2rem;
+        padding: 2.5rem 1.5rem;
+        margin: 3rem 1rem 0;
+        border-radius: 1.5rem;
+    }
+    nav > ul{
+        transform: translateX(-70px);
+    }
+}
+@media (max-height: 450px){
+    .titulo{
+        margin-top: 10rem;
+    }
+    .linea-temporal{
+        margin-top: 10rem;
+    }
+}
