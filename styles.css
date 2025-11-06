@@ -115,7 +115,7 @@ nav {
     text-align: center;
     margin-right: 20rem;
     margin-left: 20rem;
-    font-size: 4rem;
+    font-size: 10rem;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 2rem 4rem;
     border: 3px solid #d4a574;
@@ -337,6 +337,7 @@ footer a:hover {
 
     #menu-hamburguesa:checked + .ctn-links {
         height: 91vh; 
+        color: red;
     }
     .contenedor-1 {
         height: 100vh;
@@ -446,4 +447,5 @@ footer a:hover {
     .linea-temporal{
         margin-top: 10rem;
     }
+
 }
